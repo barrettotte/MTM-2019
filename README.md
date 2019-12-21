@@ -6,27 +6,30 @@ http://mtm2019.mybluemix.net/part_three/part_three_ch15.html
 
 
 ## My Entry
-TODO: Write up what I did
+I made 3 simple reports to mess aroud with REXX and learn more about z/OS 
+while fulfilling the challenge requirements.
 
 
-## File Descriptions
-| File name   | Description                   |
-| ----------- | ----------------------------- |
-| CMD.REXX    | x                             |
-| DA.REXX     | x                             |
-| GET.REXX    | x                             |
-| LNK.REXX    | x                             |
-| MSGID.REXX  | x                             |
-| STRNG.REXX  | x                             |
-| REXXJCL.JCL | Run a REXX script             |
+## Report 1 (JOBID)
+A very basic edit of the template to find occurrences of a specific
+job identifier in SYSLOG messages.
+![screenshots/report1.png](screenshots/report1.png)
+
+
+## Report 2
+TBD
+
+
+## Report 3
+TBD
 
 
 ## Commands (ISPF Shell)
 * Allocate needed partitioned data sets for challenge ```tso submit 'zos.public.jcl(p3ch15)'```
-* Run report program interactively -> ```ex ch15(get)```
-* Submit JCL for report program -> ```tso submit jcl(REXXJCL)```
+* Run report program interactively ```ex ch15(get)```
+* Submit JCL for report program ```tso submit jcl(REXXJCL)```
 * Submit and view job ```tso submit jcl(REXXJCL); =sd ; st```
-
+* Syntax highlighting for REXX (Editor) -> ```hilite rexx```
 
 ## Challenge Description
 Storyline - The role you are now playing is a role of an experienced z/OS technician. Your assignment as an experienced z/OS technician is to help a newbie become familiar with the z/OS environment. How you are going to assist a newbie become familiar with z/OS is by creating customized reports that read and format SYSLOG messages.
@@ -60,5 +63,5 @@ You have the freedom to do what you want. The judges are looking for technical a
 * 3720 terminal emulator - http://x3270.bgp.nu/
 * MVS System Messages - https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R3sa380668/$file/ieam100_v2r3.pdf
 * System Panel (SYS) - https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.isfa600/isfa600ug_isfjvsys.htm
-
+* Harcopy log messages JES2 System - https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieam100/iea3m1_Messages_sent_to_hardcopy_log_in_JES2_system.htm
 
