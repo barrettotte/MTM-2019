@@ -1,12 +1,15 @@
 # MTM2019 Part 3 Challenge 15
 
 My entry for IBM's Master the Mainframe 2019 Part 3 Challenge 15.
-
 http://mtm2019.mybluemix.net/part_three/part_three_ch15.html
 
 
+As far as the code goes, its probably very novice.
+I didn't get much time to sit down and learn as much REXX as I originally intended. I included the MTM2019 source for parts 2 and 3 for future reference.
+
+
 ## My Entry
-I made 3 simple reports to mess aroud with REXX and learn more about z/OS 
+I made 2 simple reports to mess aroud with REXX and learn more about z/OS 
 while fulfilling the challenge requirements.
 
 
@@ -17,11 +20,9 @@ job identifier in SYSLOG messages.
 
 
 ## Report 2
-TBD
+A simple report for displaying information about this system's DB2 instance using a few DB2 system views.
+![screenshots/report2.png](screenshots/report2.png)
 
-
-## Report 3
-TBD
 
 
 ## Commands (ISPF Shell)
@@ -64,4 +65,4 @@ You have the freedom to do what you want. The judges are looking for technical a
 * MVS System Messages - https://www-01.ibm.com/servers/resourcelink/svc00100.nsf/pages/zOSV2R3sa380668/$file/ieam100_v2r3.pdf
 * System Panel (SYS) - https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.isfa600/isfa600ug_isfjvsys.htm
 * Harcopy log messages JES2 System - https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieam100/iea3m1_Messages_sent_to_hardcopy_log_in_JES2_system.htm
-
+* Using REXX with DB2 https://www.youtube.com/watch?v=r0Le6JuuS4c
