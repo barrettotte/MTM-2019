@@ -1,0 +1,18 @@
+//DELETE   EXEC PGM=IDCAMS 
+//SYSPRINT DD DUMMY 
+//SYSIN    DD *,SYMBOLS=CNVTSYS 
+  DELETE &SYSUID..P2CH7.SEQ2 
+  SET MAXCC=0 
+//********************************************
+//NEWSEQ2  EXEC PGM=IEFBR14 
+//SYSUT2   DD DSN=&SYSUID..P2CH7.SEQ2, 
+//         DISP=(NEW,CATLG,DELETE), 
+//         UNIT=3390, 
+//         VOL=SER=VPWRKA, 
+//         SPACE=(TRK,(1,1)), 
+//         DCB=(LRECL=80,RECFM=FB,DSORG=PS) 
+//********************************************
+//LISTD    EXEC PGM=IKJEFT01 
+//SYSTSPRT DD DSN=&SYSUID..P2CH7.SEQ2,DISP=SHR
+//SYSTSIN  DD *,SYMBOLS=CNVTSYS 
+  LISTD P2CH7.SEQ2 
