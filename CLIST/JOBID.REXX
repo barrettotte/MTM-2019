@@ -67,6 +67,7 @@ do until isfnextlinetoken=''
 end 
                                                                   
 rc = isfcalls("off") 
+"execio 0 diskw msgout (finis"
 "free file(msgout)" 
 exit 
                                                                   
