@@ -1,0 +1,39 @@
+-------------------------------------------------------------- 
+                    DB2 Table Description 
+-------------------------------------------------------------- 
+                                                                        
+DB SSID:    DBCG 
+Table Name: EMPLOYEE 
+                                                                        
+-------------------------------------------------------------- 
+Col#    Column Name              Type       Len   Size   Null? 
+-------------------------------------------------------------- 
+0001    EMPNO                    CHAR        6       0       N 
+0002    FIRSTNME                 VARCHAR     12      0       N 
+0003    MIDINIT                  CHAR        1       0       N 
+0004    LASTNAME                 VARCHAR     15      0       N 
+0005    WORKDEPT                 CHAR        3       0       Y 
+0006    PHONENO                  CHAR        4       0       Y 
+0007    HIREDATE                 DATE        4       0       Y 
+0008    JOB                      CHAR        8       0       Y 
+0009    EDLEVEL                  SMALLINT    2       0       Y 
+0010    SEX                      CHAR        1       0       Y 
+0011    BIRTHDATE                DATE        4       0       Y 
+0012    SALARY                   DECIMAL     9       2       Y 
+0013    BONUS                    DECIMAL     9       2       Y 
+0014    COMM                     DECIMAL     9       2       Y 
+0013    FK_EMPLOYEEID            INTEGER     4       0       Y 
+0001    LAST_UPDATE_TS           TIMESTMP    10      6       N 
+0002    START_TIME               TIME        3       0       Y 
+0003    HOURS_PER_WEEK           SMALLINT    2       0       N 
+0004    IS_PERMANENT             CHAR        1       0       N 
+0005    START_DATE               DATE        4       0       N 
+0006    NAME0                    CHAR        50      0       Y 
+0007    ID                       INTEGER     4       0       N 
+0008    FK_JD_LD_LOCATION        VARCHAR     970     0       Y 
+0009    FK_JD_JP_NAME            CHAR        20      0       Y 
+0010    FK_JD_JP_DESCRIPTION     VARCHAR     970     0       Y 
+0011    FK_JP_NAME               CHAR        20      0       Y 
+0011    FK_JP_NAME               CHAR        20      0       Y 
+0012    FK_JP_DESCRIPTION        VARCHAR     970     0       Y 
+0014    FK_DEPARTMENTID          INTEGER     4       0       Y 

@@ -13,16 +13,24 @@ I made 2 simple reports to mess aroud with REXX and learn more about z/OS
 while fulfilling the challenge requirements.
 
 
-## Report 1 (JOBID)
-A very basic edit of the template to find occurrences of a specific
-job identifier in SYSLOG messages.
+## Report 1
+A simple report for displaying the columns of a specific table using a DB2 system view.
 ![screenshots/report1.png](screenshots/report1.png)
 
+```sql
+-- SQL used in report --
+SELECT COLNO, NAME, COLTYPE, LENGTH, SCALE, NULLS
+FROM SYSIBM.SYSCOLUMNS
+  WHERE TBNAME = ? -- User input
+ORDER BY COLNO
+```
 
-## Report 2
-A simple report for displaying information about this system's DB2 instance using a few DB2 system views.
+
+
+## Report 2 (JOBID)
+A very basic edit of the template to find occurrences of a specific
+job identifier in SYSLOG messages. This was a bare minimum report to meet the challenge guidelines...I was kind of uninterested in it
 ![screenshots/report2.png](screenshots/report2.png)
-
 
 
 ## Commands (ISPF Shell)
@@ -66,3 +74,4 @@ You have the freedom to do what you want. The judges are looking for technical a
 * System Panel (SYS) - https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.isfa600/isfa600ug_isfjvsys.htm
 * Harcopy log messages JES2 System - https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieam100/iea3m1_Messages_sent_to_hardcopy_log_in_JES2_system.htm
 * Using REXX with DB2 https://www.youtube.com/watch?v=r0Le6JuuS4c
+* https://www.youtube.com/channel/UCR1ajTWGiUtiAv8X-hpBY7w
