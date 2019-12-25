@@ -16,11 +16,9 @@ parse pull jobid
 jobid = translate(strip(jobid)) 
 joblen = length(jobid) 
                                                                        
-/*********************************************************************/
 "allocate dataset(ch15.output(jobid)) file(msgout) shr reuse" 
 "execio 0 diskw msgout (stem msg. open" 
 "execio 0 diskw msgout (stem title. open" 
-/*********************************************************************/
                                                                        
 rc = isfcalls('ON') 
 isfdate = "mmddyyyy /" 
@@ -31,7 +29,6 @@ isflogstarttime = time("N")
 isflogstopdate  = date("U") 
 isflogstoptime  = time("N") 
                                                                        
-/*********************************************************************/
 div = '=========================================================' 
 title.1 = div 
 title.2 = '                  JOB IDENTIFIER REPORT                  ' 
