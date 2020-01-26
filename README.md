@@ -1,5 +1,9 @@
 # MTM2019 Part 3 Challenge 15
 
+![badge](master-the-mainframe-2019-part-3.png)
+
+[![badge](master-the-mainframe-2019-part-3.png)](https://www.youracclaim.com/badges/7c41cb99-ce36-465e-800d-747a17580f73/public_url)
+
 My entry for IBM's Master the Mainframe 2019 Part 3 Challenge 15.
 http://mtm2019.mybluemix.net/part_three/part_three_ch15.html
 
